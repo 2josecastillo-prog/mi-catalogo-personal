@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo Tecnológico - Calazan</title>
+    <meta name="description" content="Catálogo en línea de productos tecnológicos.">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <h1>TechStore Calazan
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                <li><button class="tab-btn active" data-target="catalogo">Catálogo</button></li>
+                <li><button class="tab-btn" data-target="quien-soy">¿Quién soy yo?</button></li>
+                <li><button class="tab-btn" data-target="contacto">Contacto</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="banner" class="tab-content active">
+            <h2>Bienvenido a tu tienda de tecnología</h2>
+            <p>Encuentra los mejores accesorios para tu día a día con diseños modernos y funcionales.</p>
+        </section>
+
+        <section id="catalogo" class="tab-content active">
+            <h2>Nuestro Catálogo</h2>
+            <div class="productos-grid">
+                <article class="producto">
+                    <img src="img/auriculares lenovoTA10.avif" alt="Auriculares Lenovo TA10">
+                    <h3>Auriculares Lenovo TA10</h3>
+                    <p>Disfruta de la mejor calidad de sonido con estos auriculares inalámbricos de alto rendimiento.
+                    </p>
+                    <span class="precio">$25.00</span>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+
+                <article class="producto">
+                    <img src="img/cable adaptador sata.avif" alt="Cable Adaptador SATA">
+                    <h3>Cable Adaptador SATA</h3>
+                    <p>Conecta tus discos duros de manera rápida y segura. Alta velocidad de transferencia garantizada.
+                    </p>
+                    <span class="precio">$10.00</span>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+
+                <article class="producto">
+                    <img src="img/hub usb.png" alt="Hub USB">
+                    <h3>Hub USB Multipuerto</h3>
+                    <p>Amplía tus conexiones con este potente Hub USB de múltiples puertos para todos tus periféricos.
+                    </p>
+                    <span class="precio">$15.00</span>
+                    <button class="btn-comprar">Comprar</button>
+                </article>
+            </div>
+        </section>
+
+        <section id="quien-soy" class="tab-content">
+            <h2>¿Quién soy yo?</h2>
+            <article class="sobre-mi">
+                <p>Hola, mi nombre es <strong>Calazan</strong>, soy un apasionado por la tecnología y el diseño web. Mi
+                    meta es construir sitios rápidos, hermosos y accesibles.</p>
+                <p>Mis objetivos principales como profesional:</p>
+                <ul>
+                    <li>Aprender constantemente sobre nuevas herramientas web.</li>
+                    <li>Crear soluciones digitales dinámicas.</li>
+                    <li>Ofrecer una experiencia de usuario increíble (UX/UI).</li>
+                </ul>
+                <p>Estas son algunas de mis tecnologías favoritas en orden prioritario:</p>
+                <ol>
+                    <li>HTML5 & Semántica</li>
+                    <li>CSS3 Moderno</li>
+                    <li>JavaScript y Frameworks</li>
+                </ol>
+            </article>
+        </section>
+
+        <section id="contacto" class="tab-content">
+            <h2>Contáctanos</h2>
+            <p>Si tienes alguna duda o te interesa alguno de nuestros productos, completa este formulario:</p>
+            <form id="formulario-contacto">
+                <div class="form-group">
+                    <label for="nombre">Nombre Completo:</label>
+                    <input type="text" id="nombre" name="nombre" required placeholder="Ej. Juan Pérez">
+                </div>
+                <div class="form-group">
+                    <label for="email">Correo Electrónico:</label>
+                    <input type="email" id="email" name="email" required placeholder="juan@ejemplo.com">
+                </div>
+                <div class="form-group">
+                    <label for="mensaje">Mensaje o Inquietud:</label>
+                    <textarea id="mensaje" name="mensaje" rows="4" required
+                        placeholder="Escribe aquí tu duda..."></textarea>
+                </div>
+                <button type="submit" class="btn-enviar">Enviar Mensaje</button>
+                <div id="form-feedback"></div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 TechStore Calazan. Todos los derechos reservados.</p>
+        <div class="social-links">
+            <a href="https://github.com" target="_blank" rel="noopener noreferrer">GitHub</a>
+            <a href="#" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+
+</html>
